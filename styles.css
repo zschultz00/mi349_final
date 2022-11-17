@@ -9,7 +9,10 @@ body {
     border-top: 0.5em;
     border-top-style: solid;
     border-radius: 0.25em;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Ubuntu', sans-serif;}
+
+.c {
+    text-align: center;
 }
 
 nav > ul {
@@ -20,6 +23,12 @@ nav > ul {
     background-color:#bababa;
     padding: 1em;
     margin: 1em;
+}
+
+.sticky{
+    position: sticky;
+    background-color: #e3e3e3;
+    top: 0;
 }
 
 .btn {
