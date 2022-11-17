@@ -29,6 +29,7 @@ nav > ul {
     border-radius: 0.5em;
     border-color: #81ab7e;
     text-decoration: none;
+    padding: 0.25em;
 }
 
 .btn:hover {
@@ -59,6 +60,7 @@ justify-content: space-around;
         margin: 1em;
         text-align:center;
         text-decoration: none;
+        padding: 0.25em;
     }
     li {
         display: flex;
