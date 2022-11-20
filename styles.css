@@ -1,48 +1,69 @@
+:root {
+    --htmlbg: #0b4f6c;
+    --btnbr:#01baef;
+    --bodybg: #f3f3f3;
+    --btnbg: #f3f3f3;
+}
+
 html {
-    background-color: #465700;
+    background-color: var(--htmlbg);
 }
  
 body {
-    background-color: #e3e3e3;
+    background-color: var(--bodybg);
     margin: 3em;
     padding: 2em;
     border-top: 0.5em;
     border-top-style: solid;
     border-radius: 0.25em;
-    font-family: 'Ubuntu', sans-serif;}
+    font-family: 'Ubuntu', sans-serif;
+}
 
 .c {
     text-align: center;
 }
 
+.c-i {
+    text-align: center;
+    font-size: 1.25em;
+}
+
 nav > ul {
     list-style-type: none;
-    border: 0.15em;
     border-style: solid;
     border-radius: 0.25em;
     background-color:#bababa;
     padding: 1em;
     margin: 1em;
-}
-
-.sticky{
-    position: sticky;
-    background-color: #e3e3e3;
-    top: 0;
+    box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+    border: 1px solid #aaa;
 }
 
 .btn {
-    background-color: white;
+    background-color: var(--btnbg);
     color: black;
     border-style: solid;
     border-radius: 0.5em;
-    border-color: #81ab7e;
+    border-color: var(--btnbr);
     text-decoration: none;
     padding: 0.25em;
 }
 
 .btn:hover {
-    background-color: #81ab7e;
+    background-color: var(--btnbr);
+}
+
+.f-e {
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-l {
+    text-align: left;
+}
+
+.t-r {
+    text-align: right;
 }
 
 .flex-c {
@@ -53,19 +74,58 @@ nav > ul {
 justify-content: space-around;
 }
 
-@media (max-width: 400px){
+.zimg {
+    width: 20em;
+    border-radius: 0.5em;
+    margin: 1.5em;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: #bababa;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    width: 40em;
+    text-align: center;
+    box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+    border: 1px solid #aaa;
+    padding: 1em;
+}
+
+@media (max-width: 830px) {
+    .card {
+        background-color: #bababa;
+        border-radius: 0.5em;
+        margin: 0 auto;
+        width: 20em;
+        text-align: center;
+        box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+        border: 1px solid #aaa;
+        padding: 0.50em;
+    }
+
+    body{
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 500px){
     .flex-c {
         display: block;
     }
     body{
-        font-size: 75%;
+        font-size: 60%;
     }
     .btn {
-        background-color: white;
+        background-color: var(--btnbg);
         color: black;
         border-style: solid;
         border-radius: 0.5em;
-        border-color: #81ab7e;
+        border-color: var(--btnbr);
         margin: 1em;
         text-align:center;
         text-decoration: none;
@@ -74,5 +134,20 @@ justify-content: space-around;
     li {
         display: flex;
         justify-content: center;
+    }
+    .zimg {
+        width: 10em;
+        border-radius: 0.5em;
+        margin: 1em;
+    }
+    .card {
+        background-color: #bababa;
+        border-radius: 0.5em;
+        margin: 0 auto;
+        width: 15em;
+        text-align: center;
+        box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+        border: 1px solid #aaa;
+        padding: 0.25em;
     }
 }
