@@ -101,7 +101,7 @@ justify-content: space-around;
         background-color: #bababa;
         border-radius: 0.5em;
         margin: 0 auto;
-        width: 20em;
+        width: 35em;
         text-align: center;
         box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
@@ -113,10 +113,7 @@ justify-content: space-around;
     }
 }
 
-@media (max-width: 500px){
-    .flex-c {
-        display: block;
-    }
+@media (max-width: 570px){
     body{
         font-size: 60%;
     }
@@ -144,7 +141,7 @@ justify-content: space-around;
         background-color: #bababa;
         border-radius: 0.5em;
         margin: 0 auto;
-        width: 15em;
+        width: 25em;
         text-align: center;
         box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
