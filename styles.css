@@ -1,6 +1,6 @@
 :root {
     --htmlbg: #0b4f6c;
-    --btnbr:#01baef;
+    --btnbr: #01baef;
     --bodybg: #f3f3f3;
     --btnbg: #f3f3f3;
 }
@@ -32,14 +32,61 @@ h2 {
     font-size: 1.25em;
 }
 
-nav > ul {
+input {
+    display: block;
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    border: 1px;
+}
+
+input:focus {
+    display: block;
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    border: 1px;
+    border: 3px solid var(--btnbr);
+    outline: none;
+}
+
+textarea:focus {
+    display: block;
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    border: 1px;
+    resize: none;
+    border: 3px solid var(--btnbr);
+    outline: none;
+}
+
+textarea {
+    display: block;
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    border: 1px;
+    resize: none;
+}
+
+
+nav>ul {
     list-style-type: none;
     border-style: solid;
     border-radius: 0.25em;
-    background-color:#bababa;
+    background-color: #bababa;
     padding: 1em;
     margin: 1em;
-    box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
     border: 1px solid #aaa;
 }
 
@@ -75,8 +122,8 @@ nav > ul {
     display: flex;
 }
 
-.f-space-around{
-justify-content: space-around;
+.f-space-around {
+    justify-content: space-around;
 }
 
 .zimg {
@@ -96,7 +143,7 @@ justify-content: space-around;
     margin: 0 auto;
     width: 40em;
     text-align: center;
-    box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
     border: 1px solid #aaa;
     padding: 1em;
 }
@@ -108,20 +155,21 @@ justify-content: space-around;
         margin: 0 auto;
         width: 35em;
         text-align: center;
-        box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
         padding: 0.50em;
     }
 
-    body{
+    body {
         font-size: 75%;
     }
 }
 
-@media (max-width: 570px){
-    body{
+@media (max-width: 570px) {
+    body {
         font-size: 60%;
     }
+
     .btn {
         background-color: var(--btnbg);
         color: black;
@@ -129,27 +177,31 @@ justify-content: space-around;
         border-radius: 0.5em;
         border-color: var(--btnbr);
         margin: 1em;
-        text-align:center;
+        text-align: center;
         text-decoration: none;
         padding: 0.25em;
     }
+
     li {
         display: flex;
         justify-content: center;
     }
+
     .zimg {
         width: 10em;
         border-radius: 0.5em;
         margin: 1em;
     }
+
     .card {
         background-color: #bababa;
         border-radius: 0.5em;
         margin: 0 auto;
         width: 25em;
         text-align: center;
-        box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
         padding: 0.25em;
     }
+
 }
