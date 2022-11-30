@@ -5,7 +5,7 @@
     --btnbg: #f3f3f3;
     --cardbg: #bababa;
     --active: #7c7c7c;
-    --inactive: #bababa;
+    --inactive: #9c9c9c;
 }
 
 html {
@@ -217,34 +217,17 @@ li a {
     font-size: 175%;
 }
 
-li a:hover {
-    background-color: var(--active);
+li .nav-btn-inactive:hover {
+    background-color: var(--inactive);
     transition: background-color ease-in-out 0.2s;
 }
 
 
 .nav-btn-active {
     background-color: var(--active);
-    
-    
-    text-decoration: none;
-}
-/*
-.nav-btn-inactive {
-    color: var(--inactive);
-    font-size: 175%;
-    transition: color ease-in-out 0.2s;
     text-decoration: none;
 }
 
-.nav-btn-inactive:hover {
-    color: var(--active);
-    font-size: 175%;
-    transition: color ease-in-out 0.2s;
-    text-decoration: none;
-    text-shadow: rgba(0, 0, 0, 0.1) 0 5px 5px;
-}
-*/
 @media only screen and (max-width: 350px) {
     body {
         font-size: 65%;
