@@ -3,6 +3,9 @@
     --btnbr: #01baef;
     --bodybg: #f3f3f3;
     --btnbg: #f3f3f3;
+    --cardbg: #bababa;
+    --active: black;
+    --inactive: #525151;
 }
 
 html {
@@ -136,6 +139,30 @@ section>ul>li {
     transition: background-color ease-in-out 0.2s;
 }
 
+.nav-btn-active {
+    text-decoration: none;
+    color: var(--active);
+    font-size: 175%;
+}
+
+.nav-btn-inactive {
+    text-decoration: none;
+    color: var(--inactive);
+    font-size: 175%;
+}
+
+.nav-btn-inactive:hover {
+    text-decoration: none;
+    color: var(--active);
+    font-size: 175%;
+    transition: color ease-in-out 0.2s;
+}
+
+.nav-btn-inactive:hover .nav-btn-active{
+    color: purple;
+    
+}
+
 .f-e {
     display: flex;
     justify-content: space-between;
@@ -186,7 +213,7 @@ section>ul>li {
 }
 
 .card {
-    background-color: #bababa;
+    background-color: var(--cardbg);
     border-radius: 0.5em;
     box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
     border: 1px solid #aaa;
@@ -201,7 +228,7 @@ section>ul>li {
         font-size: 65%;
     }
     .card {
-        background-color: #bababa;
+        background-color: var(--cardbg);
         border-radius: 0.5em;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
@@ -219,6 +246,11 @@ section>ul>li {
         text-align: center;
         font-size: 1.5em;
     }
+    .zimg {
+        width: 14em;
+        border-radius: 0.5em;
+        margin: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 350px) {
@@ -226,7 +258,7 @@ section>ul>li {
         font-size: 65%;
     }
     .card {
-        background-color: #bababa;
+        background-color: var(--cardbg);
         border-radius: 0.5em;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
@@ -244,6 +276,11 @@ section>ul>li {
         text-align: center;
         font-size: 1.5em;
     }
+    .zimg {
+        width: 14em;
+        border-radius: 0.5em;
+        margin: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 480px) {
@@ -251,7 +288,7 @@ section>ul>li {
         font-size: 80%;
     }
     .card {
-        background-color: #bababa;
+        background-color: var(--cardbg);
         border-radius: 0.5em;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
@@ -269,7 +306,11 @@ section>ul>li {
         text-align: center;
         font-size: 2em;
     }
- 
+    .zimg {
+        width: 16em;
+        border-radius: 0.5em;
+        margin: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -277,7 +318,7 @@ section>ul>li {
         font-size: 90%;
     }
     .card {
-        background-color: #bababa;
+        background-color: var(--cardbg);
         border-radius: 0.5em;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
@@ -295,6 +336,11 @@ section>ul>li {
         text-align: center;
         font-size: 2.5em;
     }
+    .zimg {
+        width: 18em;
+        border-radius: 0.5em;
+        margin: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -302,7 +348,7 @@ section>ul>li {
         font-size: 100%;
     }
     .card {
-        background-color: #bababa;
+        background-color: var(--cardbg);
         border-radius: 0.5em;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
@@ -319,5 +365,10 @@ section>ul>li {
     .c-i {
         text-align: center;
         font-size: 3em;
+    }
+    .zimg {
+        width: 20em;
+        border-radius: 0.5em;
+        margin: 1.5em;
     }
 }   
