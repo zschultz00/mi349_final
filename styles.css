@@ -58,6 +58,12 @@ h2 {
     font-size: 3em;
 }
 
+.h-c-c {
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+}
+
 .h-c {
     text-align: center;
 }
