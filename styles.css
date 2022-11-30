@@ -19,6 +19,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+button {
+    width: 5em;
+    margin: 1em;
+}
+
 section>div>p{
     margin: 1em;
 }
@@ -47,6 +53,10 @@ h2 {
 .c-i {
     text-align: center;
     font-size: 3em;
+}
+
+.h-c{  
+    text-align: center; 
 }
 
 input {
@@ -147,6 +157,11 @@ section>ul>li {
     justify-content: space-around;
 }
 
+.img-wrapper{
+    display: grid;
+    justify-items: center;
+}
+
 .zimg {
     width: 20em;
     border-radius: 0.5em;
@@ -154,92 +169,155 @@ section>ul>li {
 }
 
 .center {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-center{
     display: grid;
-    place-items: center;
+    justify-items: center;
+
+}
+
+.contact-m{
+    margin-left: -5%;
+    margin-right: -5%;
 }
 
 .card {
     background-color: #bababa;
     border-radius: 0.5em;
-    margin: 0 auto;
-    width: 40em;
-    text-align: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
     border: 1px solid #aaa;
     padding: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 2em;
 }
 
-@media (max-width: 830px) {
+@media only screen and (max-width: 350px) {
+    body{
+        font-size: 65%;
+    }
     .card {
         background-color: #bababa;
         border-radius: 0.5em;
-        margin: 0 auto;
-        width: 40em;
-        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
-        padding: 0.50em;
+        padding: 1em;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 0.5em;
     }
-
-    body {
-        font-size: 75%;
+    .c {
+        text-align: center;
+        font-size: 3em;
+    }
+    
+    .c-i {
+        text-align: center;
+        font-size: 1.5em;
     }
 }
 
-@media (max-width: 630px) {
+@media only screen and (min-width: 350px) {
+    body{
+        font-size: 65%;
+    }
     .card {
         background-color: #bababa;
         border-radius: 0.5em;
-        margin: 0 auto;
-        width: 25em;
-        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
-        padding: 0.50em;
+        padding: 1em;
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+        margin-bottom: 1em;
     }
-
-    body {
-        font-size: 75%;
+    .c {
+        text-align: center;
+        font-size: 3em;
+    }
+    
+    .c-i {
+        text-align: center;
+        font-size: 1.5em;
     }
 }
 
-@media (max-width: 450px) {
-    body {
+@media only screen and (min-width: 480px) {
+    body{
         font-size: 80%;
     }
-
-    .btn {
-        background-color: var(--btnbg);
-        color: black;
-        border-style: solid;
-        border-radius: 0.5em;
-        border-color: var(--btnbr);
-        margin: 1em;
-        text-align: center;
-        text-decoration: none;
-        padding: 0.25em;
-    }
-
-    li {
-        display: flex;
-        justify-content: center;
-    }
-
-    .zimg {
-        width: 10em;
-        border-radius: 0.5em;
-        margin: 1em;
-    }
-
     .card {
         background-color: #bababa;
         border-radius: 0.5em;
-        margin: 0 auto;
-        width: 20em;
-        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
-        padding: 0.25em;
+        padding: 1em;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-bottom: 1em;
     }
-
+    .c {
+        text-align: center;
+        font-size: 3.75em;
+    }
+    
+    .c-i {
+        text-align: center;
+        font-size: 2em;
+    }
+ 
 }
+
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 90%;
+    }
+    .card {
+        background-color: #bababa;
+        border-radius: 0.5em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
+        border: 1px solid #aaa;
+        padding: 1em;
+        margin-left: 4.5em;
+        margin-right: 4.5em;
+        margin-bottom: 1.5em;
+    }
+    .c {
+        text-align: center;
+        font-size: 5em;
+    }
+    
+    .c-i {
+        text-align: center;
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body{
+        font-size: 100%;
+    }
+    .card {
+        background-color: #bababa;
+        border-radius: 0.5em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
+        border: 1px solid #aaa;
+        padding: 1em;
+        margin-left: 5em;
+        margin-right: 5em;
+        margin-bottom: 2em;
+    }
+    .c {
+        text-align: center;
+        font-size: 6em;
+    }
+    
+    .c-i {
+        text-align: center;
+        font-size: 3em;
+    }
+}   
