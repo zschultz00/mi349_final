@@ -19,17 +19,34 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+section>div>p{
+    margin: 1em;
+}
+
+h3{
+    margin: 1em;
+}
+
+section>p {
+    margin: 1em;
+}
+
+div>p {
+    margin: 1em;
+}
+
 h2 {
     margin-top: 2em;
 }
 
 .c {
     text-align: center;
+    font-size: 6em;
 }
 
 .c-i {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 3em;
 }
 
 input {
@@ -88,6 +105,10 @@ nav>ul {
     margin: 1em;
     box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
     border: 1px solid #aaa;
+}
+
+section>ul>li {
+    margin: 0.5em;
 }
 
 .btn {
@@ -153,7 +174,7 @@ nav>ul {
         background-color: #bababa;
         border-radius: 0.5em;
         margin: 0 auto;
-        width: 35em;
+        width: 40em;
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
@@ -165,9 +186,26 @@ nav>ul {
     }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 630px) {
+    .card {
+        background-color: #bababa;
+        border-radius: 0.5em;
+        margin: 0 auto;
+        width: 25em;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
+        border: 1px solid #aaa;
+        padding: 0.50em;
+    }
+
     body {
-        font-size: 60%;
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: 80%;
     }
 
     .btn {
@@ -197,7 +235,7 @@ nav>ul {
         background-color: #bababa;
         border-radius: 0.5em;
         margin: 0 auto;
-        width: 25em;
+        width: 20em;
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px;
         border: 1px solid #aaa;
