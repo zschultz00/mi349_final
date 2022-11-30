@@ -28,11 +28,11 @@ button {
     margin: 1em;
 }
 
-section>div>p{
+section>div>p {
     margin: 1em;
 }
 
-h3{
+h3 {
     margin: 1em;
 }
 
@@ -58,8 +58,8 @@ h2 {
     font-size: 3em;
 }
 
-.h-c{  
-    text-align: center; 
+.h-c {
+    text-align: center;
 }
 
 input {
@@ -139,29 +139,9 @@ section>ul>li {
     transition: background-color ease-in-out 0.2s;
 }
 
-.nav-btn-active {
-    text-decoration: none;
-    color: var(--active);
-    font-size: 175%;
-}
 
-.nav-btn-inactive {
-    text-decoration: none;
-    color: var(--inactive);
-    font-size: 175%;
-}
 
-.nav-btn-inactive:hover {
-    text-decoration: none;
-    color: var(--active);
-    font-size: 175%;
-    transition: color ease-in-out 0.2s;
-}
 
-.nav-btn-inactive:hover .nav-btn-active{
-    color: purple;
-    
-}
 
 .f-e {
     display: flex;
@@ -184,7 +164,7 @@ section>ul>li {
     justify-content: space-around;
 }
 
-.img-wrapper{
+.img-wrapper {
     display: grid;
     justify-items: center;
 }
@@ -201,13 +181,13 @@ section>ul>li {
 
 }
 
-.contact-center{
+.contact-center {
     display: grid;
     justify-items: center;
 
 }
 
-.contact-m{
+.contact-m {
     margin-left: -5%;
     margin-right: -5%;
 }
@@ -223,10 +203,32 @@ section>ul>li {
     margin-bottom: 2em;
 }
 
+.nav-btn-active {
+    color: var(--active);
+    font-size: 175%;
+    transition: color ease-in-out 0.2s;
+    text-decoration: none;
+}
+
+.nav-btn-inactive {
+    color: var(--inactive);
+    font-size: 175%;
+    transition: color ease-in-out 0.2s;
+    text-decoration: none;
+}
+
+.nav-btn-inactive:hover {
+    color: var(--active);
+    font-size: 175%;
+    transition: color ease-in-out 0.2s;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 350px) {
-    body{
+    body {
         font-size: 65%;
     }
+
     .card {
         background-color: var(--cardbg);
         border-radius: 0.5em;
@@ -237,15 +239,17 @@ section>ul>li {
         margin-right: 3em;
         margin-bottom: 0.5em;
     }
+
     .c {
         text-align: center;
         font-size: 3em;
     }
-    
+
     .c-i {
         text-align: center;
         font-size: 1.5em;
     }
+
     .zimg {
         width: 14em;
         border-radius: 0.5em;
@@ -254,9 +258,10 @@ section>ul>li {
 }
 
 @media only screen and (min-width: 350px) {
-    body{
+    body {
         font-size: 65%;
     }
+
     .card {
         background-color: var(--cardbg);
         border-radius: 0.5em;
@@ -267,15 +272,17 @@ section>ul>li {
         margin-right: 3.5em;
         margin-bottom: 1em;
     }
+
     .c {
         text-align: center;
         font-size: 3em;
     }
-    
+
     .c-i {
         text-align: center;
         font-size: 1.5em;
     }
+
     .zimg {
         width: 14em;
         border-radius: 0.5em;
@@ -284,9 +291,10 @@ section>ul>li {
 }
 
 @media only screen and (min-width: 480px) {
-    body{
+    body {
         font-size: 80%;
     }
+
     .card {
         background-color: var(--cardbg);
         border-radius: 0.5em;
@@ -297,15 +305,17 @@ section>ul>li {
         margin-right: 4em;
         margin-bottom: 1em;
     }
+
     .c {
         text-align: center;
         font-size: 3.75em;
     }
-    
+
     .c-i {
         text-align: center;
         font-size: 2em;
     }
+
     .zimg {
         width: 16em;
         border-radius: 0.5em;
@@ -314,9 +324,10 @@ section>ul>li {
 }
 
 @media only screen and (min-width: 768px) {
-    body{
+    body {
         font-size: 90%;
     }
+
     .card {
         background-color: var(--cardbg);
         border-radius: 0.5em;
@@ -327,15 +338,17 @@ section>ul>li {
         margin-right: 4.5em;
         margin-bottom: 1.5em;
     }
+
     .c {
         text-align: center;
         font-size: 5em;
     }
-    
+
     .c-i {
         text-align: center;
         font-size: 2.5em;
     }
+
     .zimg {
         width: 18em;
         border-radius: 0.5em;
@@ -344,9 +357,10 @@ section>ul>li {
 }
 
 @media only screen and (min-width: 1024px) {
-    body{
+    body {
         font-size: 100%;
     }
+
     .card {
         background-color: var(--cardbg);
         border-radius: 0.5em;
@@ -357,18 +371,20 @@ section>ul>li {
         margin-right: 5em;
         margin-bottom: 2em;
     }
+
     .c {
         text-align: center;
         font-size: 6em;
     }
-    
+
     .c-i {
         text-align: center;
         font-size: 3em;
     }
+
     .zimg {
         width: 20em;
         border-radius: 0.5em;
         margin: 1.5em;
     }
-}   
+}
