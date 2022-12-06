@@ -8,6 +8,10 @@
     --inactive: #9c9c9c;
 }
 
+p {
+    font-size: 125%;
+}
+
 html {
     background-color: var(--htmlbg);
 }
@@ -60,12 +64,19 @@ h2 {
 
 .h-c-c {
     text-align: center;
-    font-size: 110%;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.h-c-c-c {
+    text-align: center;
+    font-size: 145%;
     font-weight: bold;
 }
 
 .h-c {
     text-align: center;
+    font-size: 160%;
 }
 
 input {
